@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 20vw;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <h2 class="text-center mb-3">Coffee</h2>
+        <form action="" id="myForm">
+            <div class="row align-items-stretch">
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/01.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">咖啡</h4>
+                            <input type="hidden" class="form-control h-100px" id="coffeeHidden"
+                                placeholder="Enter english" name="english" value="10">
+                            <input type="number" class="form-control h-100px" id="coffeeNum" placeholder="Enter english"
+                                name="english" value="0" min="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/02.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">花茶</h4>
+                            <input type="hidden" class="form-control h-100px" id="teaHidden"
+                                placeholder="Enter teaHidden" name="english" value="100">
+                            <input type="number" class="form-control h-100px" id="teaNum" placeholder="Enter teaNum"
+                                name="english" value="0" min="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/03.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">珍珠奶茶</h4>
+                            <input type="hidden" class="form-control h-100px" id="milkHidden"
+                                placeholder="Enter milkHidden" name="english" value="1000">
+                            <input type="number" class="form-control h-100px" id="milkNum" placeholder="Enter milkNum"
+                                name="english" value="0" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <!-- <div class="offset-9 col-2 offset-md-11 col-1"> -->
+                    <div class="form-group">
+                        <!-- <input type="submit" value="submit"> -->
+                        <button type="submit" class="btn btn-info btn-lg btn-block" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        </form>
+    </div>
+
+    <hr>
+
+
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- div -->
+                <div id="result">
+                </div>
+                <!-- div end -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/tea.js"></script>
+
+</body>
+
+</html>
