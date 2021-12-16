@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCDE成績表</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .bb {
+            background-color: rgb(245, 208, 208);
+        }
+
+        .row {
+            color: rgb(163, 27, 9);
+            /* box-shadow: 10px 5px   rgb(251, 191, 191); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bb">
+        <h2 class="text-center mb-5">成績計算</h2>
+        <form action="" id="myForm">
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+                    <div class="form-group">
+                        <label for="chinese">國文:</label>
+                        <input type="number" class="form-control" id="chinese" placeholder="請輸入國文成績" name="chinese"
+                            min="0" max="100">
+                        <p class="text-danger" id="cmErr"></p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="form-group">
+                        <label for="english">英文:</label>
+                        <input type="number" class="form-control" id="english" placeholder="請輸入英文成績" name="english"
+                            min="0" max="100">
+                    </div>
+                    <p class="text-danger" id="inchErr"></p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="form-group">
+                        <label for="math">數學:</label>
+                        <input type="number" class="form-control" id="math" placeholder="請輸入數學成績" name="math" min="0"
+                            max="100">
+                    </div>
+                    <p class="text-danger" id="inchErr"></p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!-- div class="offset-0 col-10" -->
+                <div class="col-12">
+                    <div class="form-group">
+                        <!-- btn-lg or .btn-sm  調整btn的大小 -->
+                        <!-- 通常btn-block比較多都是搭滿版 -->
+                        <button type="submit" class="btn btn-danger btn-block btn-lg" id="submitBtn">點我submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                <!-- <div class="offset-9 col-2 offset-md-11 col-1"> -->
+                    <div class="form-group">
+                        <!-- <input type="submit" value="submit"> -->
+                        <button type="button" class="btn btn-info btn-lg btn-block" id="resetBtn">還原為初始值60分</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- div 開始 -->
+                        <div id="result">
+                            一個簡潔的警示提示!
+                        </div>
+                        <!-- div結束 -->
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </form>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/abcde.js"></script>
+
+</body>
+
+</html>
